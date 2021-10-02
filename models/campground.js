@@ -47,6 +47,7 @@ const CampgroundSchema = new Schema({
 CampgroundSchema.virtual('properties.popupID').get(function () {
     return `${this._id}`
 })
+
 CampgroundSchema.virtual('properties.popupTitle').get(function () {
     return `${this.title}`
 })
